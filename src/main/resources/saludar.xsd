@@ -1,0 +1,19 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://example.com/soap"
+           targetNamespace="http://example.com/soap" elementFormDefault="qualified">
+
+    <xs:element name="SaludarRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nombre" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="SaludarResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="saludo" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
